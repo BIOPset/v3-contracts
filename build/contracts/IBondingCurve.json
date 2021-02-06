@@ -1,0 +1,521 @@
+{
+  "contractName": "IBondingCurve",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_reserveTokenAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "getContinuousMintReward",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_continuousTokenAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "getContinuousBurnRefund",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_continuousTokenAmount\",\"type\":\"uint256\"}],\"name\":\"getContinuousBurnRefund\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_reserveTokenAmount\",\"type\":\"uint256\"}],\"name\":\"getContinuousMintReward\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"getContinuousBurnRefund(uint256)\":{\"details\":\"Given a continuous token amount, calculates the amount of reserve tokens returned.\"},\"getContinuousMintReward(uint256)\":{\"details\":\"Given a reserve token amount, calculates the amount of continuous tokens returned.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/x/Desktop/eth/BIOPv3/contracts/ContinuousToken/interfaces/IBondingCurve.sol\":\"IBondingCurve\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/x/Desktop/eth/BIOPv3/contracts/ContinuousToken/interfaces/IBondingCurve.sol\":{\"keccak256\":\"0xadffb2f9765a5fa6e1430160b82694fadc78694e1eb173d0927485a47e0bd5b2\",\"urls\":[\"bzz-raw://fb391b72bbfb992d2ff1494f55f20ab47191322c0aff1601a8a8c79be95e3030\",\"dweb:/ipfs/Qma7G4ZYdNvQgtsPpkuMYK8y4LrJKZUTkRWES4qpu8pzH8\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity 0.6.6;\n\n\ninterface IBondingCurve {\n    /**\n    * @dev Given a reserve token amount, calculates the amount of continuous tokens returned.\n    */\n    function getContinuousMintReward(uint _reserveTokenAmount) external view returns (uint);\n\n    /**\n    * @dev Given a continuous token amount, calculates the amount of reserve tokens returned.\n    */  \n    function getContinuousBurnRefund(uint _continuousTokenAmount) external view returns (uint);\n}\n",
+  "sourcePath": "/Users/x/Desktop/eth/BIOPv3/contracts/ContinuousToken/interfaces/IBondingCurve.sol",
+  "ast": {
+    "absolutePath": "/Users/x/Desktop/eth/BIOPv3/contracts/ContinuousToken/interfaces/IBondingCurve.sol",
+    "exportedSymbols": {
+      "IBondingCurve": [
+        2445
+      ]
+    },
+    "id": 2446,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2428,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 2445,
+        "linearizedBaseContracts": [
+          2445
+        ],
+        "name": "IBondingCurve",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 2429,
+              "nodeType": "StructuredDocumentation",
+              "src": "55:104:4",
+              "text": "@dev Given a reserve token amount, calculates the amount of continuous tokens returned."
+            },
+            "functionSelector": "0d8f9f7f",
+            "id": 2436,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getContinuousMintReward",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2432,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2431,
+                  "mutability": "mutable",
+                  "name": "_reserveTokenAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2436,
+                  "src": "197:24:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2430,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "197:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "196:26:4"
+            },
+            "returnParameters": {
+              "id": 2435,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2434,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2436,
+                  "src": "246:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2433,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "246:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "245:6:4"
+            },
+            "scope": 2445,
+            "src": "164:88:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2437,
+              "nodeType": "StructuredDocumentation",
+              "src": "258:104:4",
+              "text": "@dev Given a continuous token amount, calculates the amount of reserve tokens returned."
+            },
+            "functionSelector": "7cbed3e0",
+            "id": 2444,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getContinuousBurnRefund",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2440,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2439,
+                  "mutability": "mutable",
+                  "name": "_continuousTokenAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2444,
+                  "src": "402:27:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2438,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "402:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "401:29:4"
+            },
+            "returnParameters": {
+              "id": 2443,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2442,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2444,
+                  "src": "454:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2441,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "454:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "453:6:4"
+            },
+            "scope": 2445,
+            "src": "369:91:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2446,
+        "src": "25:437:4"
+      }
+    ],
+    "src": "0:463:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/x/Desktop/eth/BIOPv3/contracts/ContinuousToken/interfaces/IBondingCurve.sol",
+    "exportedSymbols": {
+      "IBondingCurve": [
+        2445
+      ]
+    },
+    "id": 2446,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2428,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 2445,
+        "linearizedBaseContracts": [
+          2445
+        ],
+        "name": "IBondingCurve",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 2429,
+              "nodeType": "StructuredDocumentation",
+              "src": "55:104:4",
+              "text": "@dev Given a reserve token amount, calculates the amount of continuous tokens returned."
+            },
+            "functionSelector": "0d8f9f7f",
+            "id": 2436,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getContinuousMintReward",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2432,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2431,
+                  "mutability": "mutable",
+                  "name": "_reserveTokenAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2436,
+                  "src": "197:24:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2430,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "197:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "196:26:4"
+            },
+            "returnParameters": {
+              "id": 2435,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2434,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2436,
+                  "src": "246:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2433,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "246:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "245:6:4"
+            },
+            "scope": 2445,
+            "src": "164:88:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2437,
+              "nodeType": "StructuredDocumentation",
+              "src": "258:104:4",
+              "text": "@dev Given a continuous token amount, calculates the amount of reserve tokens returned."
+            },
+            "functionSelector": "7cbed3e0",
+            "id": 2444,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getContinuousBurnRefund",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2440,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2439,
+                  "mutability": "mutable",
+                  "name": "_continuousTokenAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2444,
+                  "src": "402:27:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2438,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "402:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "401:29:4"
+            },
+            "returnParameters": {
+              "id": 2443,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2442,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2444,
+                  "src": "454:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2441,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "454:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "453:6:4"
+            },
+            "scope": 2445,
+            "src": "369:91:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2446,
+        "src": "25:437:4"
+      }
+    ],
+    "src": "0:463:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.6+commit.6c089d02.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.5",
+  "updatedAt": "2021-01-25T07:34:52.737Z",
+  "devdoc": {
+    "methods": {
+      "getContinuousBurnRefund(uint256)": {
+        "details": "Given a continuous token amount, calculates the amount of reserve tokens returned."
+      },
+      "getContinuousMintReward(uint256)": {
+        "details": "Given a reserve token amount, calculates the amount of continuous tokens returned."
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
